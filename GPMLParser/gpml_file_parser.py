@@ -1,11 +1,10 @@
 """This file contains function which help in parsing GPML file."""
-import networkx as nx
-from bs4 import BeautifulSoup
-from itertools import permutations, product
-
-
 #oggpnosn
 #hkhr
+import networkx as nx
+from bs4 import BeautifulSoup
+from itertools import permutations
+
 
 def get_node_information(data_node):
     """
@@ -112,12 +111,15 @@ def get_group_information(group_node, data_nodes):
             if db_id == complex_id:
                 graph_id = data_node.attrs.get("graphid", None)
 
-    return graph_id, {"member_nodes": member_nodes, "type": "Complex",
-                       "text": "|".join(text_labels)}
+    return graph_id, {"member_nodes": member_nodes, "type": "Complex", "text": "|".join(text_labels)}
 
 
 def get_networkx_graph(pathway_filepath):
-    """it converts the GPML format to networkx graph"""
+    """
+    It converts GPML xml file to networkx graph.
+    :param pathway_filepath: the filepath of GPML pathway file.
+    :return: networkx graph object
+    """
     graph = nx.DiGraph()
 
     wiki_file = BeautifulSoup(open(pathway_filepath), "html.parser")
