@@ -16,7 +16,7 @@ Install
 
 Install the latest version of GPMLToNetworkx::
 
-    $ pip install .
+    $ pip install -r requirements.txt
 
 Simple example
 --------------
@@ -34,7 +34,20 @@ Read the GPML file into a networkx graph:
     {'attr_dict': {'database_name': 'Uniprot-TrEMBL', 'database_id': 'Q13501', 'text': 'SQSTM1', 'type': 'Protein', 'groupref': None}}
     >>> print(graph.node["bb7b1"])
     {'attr_dict': {'member_nodes': ['P63000', 'CHEBI:15996'], 'type': 'Complex', 'text': 'GGC-PalmC-RAC1 |GTP '}}
-    
+ 
+Node Semantics
+--------------
+
+Edge Semantics
+--------------
+
+Shortest path example
+--------------
+
+
+--------------
+
+
 Bugs
 ----
 
