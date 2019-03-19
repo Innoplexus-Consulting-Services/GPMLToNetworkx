@@ -1,4 +1,3 @@
-
 # GPML Pathway to networkx convertor
 
 GPMLToNetworkx is a Python package for parsing GPML pathway files into a 
@@ -59,6 +58,11 @@ path_length = len(refined_path)-1
 
 ## Bugs
 You can raise issues in github issues.
+
+## Authors
+
+Tanay Gahlot - tanay.gahlot@innoplexus.com
+
 
 ## License
 
