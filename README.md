@@ -64,7 +64,3 @@ You can raise issues in github issues.
 Tanay Gahlot - tanay.gahlot@innoplexus.com
 
 
-## License
-
-<this needs some legal work>
-@Sudhanshu
